@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Endure</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway&family=Viga&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
@@ -15,22 +18,13 @@
         <span class="menu-icon" onclick="openNav()">&#9776;</span>
         <ul class="navbar-menu">
             <li class="navbar-item">
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
             </li>
             <li class="navbar-item dropdown">
-                <a href="prgms.html" class="dropdown-toggle">Programs</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Weightlifting</a></li>
-                    <li><a href="#">Cardio</a></li>
-                    <li><a href="#">Nutrition</a></li>
-                </ul>
+                <a href="prgms.html">Programs</a>
             </li>
             <li class="navbar-item dropdown">
                 <a href="#" class="dropdown-toggle">About</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Our Story</a></li>
-                    <li><a href="#">Trainers</a></li>
-                </ul>
             </li>
             <li class="navbar-item">
                 <a href="#">Contact</a>
@@ -42,7 +36,7 @@
     <div id="sidePanel" class="side-panel">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#">Home</a>
-        <a href="/prgms.html">Programs</a>
+        <a href="prgms.html">Programs</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
     </div>
@@ -61,7 +55,7 @@
 
     <script>
         function openNav() {
-            document.getElementById("sidePanel").style.width = "250px";
+            document.getElementById("sidePanel").style.width = "150px";
         }
 
         function closeNav() {

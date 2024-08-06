@@ -1,3 +1,10 @@
+function openNav() {
+    document.getElementById("sidePanel").style.width = "150px";
+}
+
+function closeNav() {
+    document.getElementById("sidePanel").style.width = "0";
+}
 document.addEventListener('DOMContentLoaded', function () {
     // Select all membership boxes
     const membershipBoxes = document.querySelectorAll('.membership-box');
@@ -35,11 +42,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-function openNav() {
-    document.getElementById("sidePanel").style.width = "250px";
-}
-
-function closeNav() {
-    document.getElementById("sidePanel").style.width = "0";
-}

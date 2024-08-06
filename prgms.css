@@ -1,6 +1,8 @@
 /* Existing styles ... */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     padding: 0;
     background-color: #1a1a1a;
@@ -10,6 +12,7 @@ body {
     background-color: #333;
     overflow: hidden;
     position: relative;
+    font-size: 24px
 }
 
 .navbar-brand {
@@ -30,11 +33,13 @@ body {
     margin: 0;
     padding: 0;
     float: right;
+    height: 59px;
 }
 
 .navbar-item {
     float: left;
     position: relative;
+    height: 59px;
 }
 
 .navbar-item a, .dropdown-toggle {
@@ -105,10 +110,12 @@ body {
 .question-box {
     position: relative;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.466);
     padding: 20px;
     border-radius: 10px;
     display: inline-block;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
 }
 
 .question-box p {
@@ -221,7 +228,7 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #333;
+    background-color: #333333;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
