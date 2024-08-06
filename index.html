@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="index.html">Endure</a>
+        </div>
+        <span class="menu-icon" onclick="openNav()">&#9776;</span>
+        <ul class="navbar-menu">
+            <li class="navbar-item">
+                <a href="#">Home</a>
+            </li>
+            <li class="navbar-item dropdown">
+                <a href="prgms.html" class="dropdown-toggle">Programs</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Weightlifting</a></li>
+                    <li><a href="#">Cardio</a></li>
+                    <li><a href="#">Nutrition</a></li>
+                </ul>
+            </li>
+            <li class="navbar-item dropdown">
+                <a href="#" class="dropdown-toggle">About</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Trainers</a></li>
+                </ul>
+            </li>
+            <li class="navbar-item">
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Side panel for mobile navigation -->
+    <div id="sidePanel" class="side-panel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="/prgms.html">Programs</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Landing Page Content -->
+    <div class="landing-page">
+        <h1>Welcome to Endure</h1>
+        <p>Transform your fitness journey with us!</p>
+        <a href="getstarted.html" class="cta-button">Get Started</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Endure. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("sidePanel").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("sidePanel").style.width = "0";
+        }
+
+        // Toggle dropdowns on click for both desktop and mobile
+        document.addEventListener('DOMContentLoaded', function () {
+            var dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+            dropdownToggles.forEach(function (toggle) {
+                toggle.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    var dropdownMenu = this.nextElementSibling;
+                    dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

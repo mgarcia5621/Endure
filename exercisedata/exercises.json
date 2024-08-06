@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Squat",
+        "category": "Legs",
+        "equipment": "Barbell",
+        "description": "A compound exercise that targets the quadriceps, hamstrings, glutes, and lower back."
+    },
+    {
+        "name": "Bench Press",
+        "category": "Chest",
+        "equipment": "Barbell",
+        "description": "An upper body exercise that primarily targets the chest, triceps, and shoulders."
+    },
+    {
+        "name": "Deadlift",
+        "category": "Back",
+        "equipment": "Barbell",
+        "description": "A compound exercise that targets the lower back, glutes, hamstrings, and core."
+    },
+    {
+        "name": "Overhead Press",
+        "category": "Shoulders",
+        "equipment": "Barbell",
+        "description": "An exercise that targets the shoulders, triceps, and upper chest."
+    },
+    {
+        "name": "Barbell Row",
+        "category": "Back",
+        "equipment": "Barbell",
+        "description": "A compound exercise that targets the upper back, lats, and biceps."
+    }
+]

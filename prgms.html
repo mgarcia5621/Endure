@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs - Endure</title>
+    <link rel="stylesheet" href="prgms.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="index.html">Endure</a>
+        </div>
+        <ul class="navbar-menu">
+            <li class="navbar-item"><a href="index.html">Home</a></li>
+            <li class="navbar-item dropdown">
+                <a href="programs.html" class="dropdown-toggle">Programs</a>
+            </li>
+            <li class="navbar-item dropdown">
+                <a href="#" class="dropdown-toggle">About</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Trainers</a></li>
+                </ul>
+            </li>
+            <li class="navbar-item"><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-icon" onclick="openNav()">&#9776;</div>
+    </nav>
+
+    <!-- Side Panel -->
+    <div id="side-panel" class="side-panel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="programs.html">Programs</a>
+        <a href="#">Our Story</a>
+        <a href="#">Trainers</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Programs Page Content -->
+    <div class="programs-page">
+        <h1>Find Your Perfect Program</h1>
+        <div id="question-container">
+            <div class="question-box">
+                <p>What is your gender?</p>
+                <button onclick="nextQuestion('Male')">Male</button>
+                <button onclick="nextQuestion('Female')">Female</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Endure. All rights reserved.</p>
+    </footer>
+
+    <script src="prgms.js"></script>
+</body>
+</html>
