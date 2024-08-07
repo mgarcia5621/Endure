@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endure - Transform Your Fitness Journey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="newland.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway&family=Viga&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="newland.html">Endure</a>
+        </div>
+        <ul class="navbar-menu">
+            <li style="background-color: black;" class="navbar-item"><a href="login.html">Login</a></li>
+            <li class="navbar-item"><a href="prgms.html">Programs</a></li>
+            <li class="navbar-item"><a href="about.html">About</a></li>
+            <li class="navbar-item"><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-icon" onclick="openNav()">☰</div>
+    </nav>
+
+    <div id="sidePanel" class="side-panel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="login.html">Login</a>
+        <a href="prgms.html">Programs</a>
+        <a href="about.html">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="overlay" onclick="closeNav()"></div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 data-aos="fade-up">Welcome to <span style="color: rgb(173, 38, 38);">Endure</span></h1>
+            <p style="font-size: 24px;" class="hero-content-p" data-aos="fade-up" data-aos-delay="200">Transform your fitness journey with personalized workouts and expert guidance</p>
+            <a style="font-size: 24px;" href="getstarted.html" class="cta-button" data-aos="fade-up" data-aos-delay="400">Get Started</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="features">
+            <div class="feature" data-aos="fade-right">
+                <i class="fas fa-dumbbell"></i>
+                <h2>Customized Workouts</h2>
+                <p>Tailored exercise plans to meet your unique fitness goals and abilities.</p>
+            </div>
+            <div class="feature" data-aos="fade-up">
+                <i class="fas fa-apple-alt"></i>
+                <h2>Nutrition Guidance</h2>
+                <p>Expert advice on diet and nutrition to complement your fitness routine.</p>
+            </div>
+            <div class="feature" data-aos="fade-left">
+                <i class="fas fa-chart-line"></i>
+                <h2>Progress Tracking</h2>
+                <p>Monitor your improvements and stay motivated with our tracking tools.</p>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2 data-aos="fade-up">What Our Members Say</h2>
+            <div class="testimonial-container">
+                <div class="testimonial" data-aos="fade-right">
+                    <p>"Endure has completely transformed my approach to fitness. I've never felt stronger!"</p>
+                    - Sarah J.
+                </div>
+                <div class="testimonial" data-aos="fade-left">
+                    <p>"The personalized programs and supportive community have kept me motivated like never before."</p>
+                    - Mike T.
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2 data-aos="fade-up">Ready to Start Your Journey?</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Join Endure today and take the first step towards a healthier, stronger you.</p>
+            <a href="getstarted.html" class="cta-button" data-aos="fade-up" data-aos-delay="400">Begin Your Transformation</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="prgms.html">Programs</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="fab fa-facebook"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-youtube"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2024 Endure. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+</html>

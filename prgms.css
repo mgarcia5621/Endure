@@ -12,6 +12,8 @@ body {
     background-color: #333;
     overflow: hidden;
     position: relative;
+    height: 3.6rem;
+    padding: 0px 20rem;
     font-size: 24px
 }
 
@@ -167,6 +169,9 @@ body {
 
     .navbar {
         text-align: right;
+        padding: 0px;
+        height: 4.6rem;
+
     }
 
     .side-panel a {

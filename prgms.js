@@ -90,4 +90,54 @@ function provideOutcome() {
             <p>${recommendation}</p>
         </div>
     `;
+    // main.js
+    document.addEventListener("DOMContentLoaded", () => {
+        fetch('exercisedata/exercises.json')
+            .then(response => response.json())
+            .then(data => {
+                // Now you have access to the JSON data
+                const exercises = data.exercises;
+                
+                const userGender = "Male";
+                const userAge = 25;
+                const userGoals = "Muscle Gain";
+    
+                function getAgeRange(age) {
+                    if (age <= 30) return "18-30";
+                    if (age <= 50) return "31-50";
+                    return "51+";
+                }
+    
+                function getWorkoutPlan(gender, age, goals) {
+                    const ageRange = getAgeRange(age);
+                    const ageExercises = exercises.age[ageRange];
+                    const filteredExercises = ageExercises.filter(exercise => 
+                        exercise.gender.includes(gender) && 
+                        exercise.goals.includes(goals)
+                    );
+    
+                    return filteredExercises;
+                }
+    
+                const workoutPlan = getWorkoutPlan(userGender, userAge, userGoals);
+    
+                // Display the workout plan to the user
+                function displayWorkoutPlan(plan) {
+                    let planHtml = "";
+                    plan.forEach(exercise => {
+                        planHtml += `<div class="exercise-box">
+                                        <h2>${exercise.name}</h2>
+                                        <p>${exercise.description}</p>
+                                     </div>`;
+                    });
+    
+                    document.getElementById("questionContainer").innerHTML = planHtml;
+                }
+    
+                
+                displayWorkoutPlan(workoutPlan);
+            })
+            // .catch(error => console.error('Error loading JSON:', error));
+    });
 }
+

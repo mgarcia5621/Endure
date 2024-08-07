@@ -17,6 +17,8 @@ body {
     overflow: hidden;
     position: relative;
     font-size: 24px;
+    height: 3.6rem;
+    padding: 0px 20rem;
 }
 
 .navbar-brand {
@@ -186,6 +188,7 @@ body {
 
     .navbar {
         text-align: right;
+        height: 4.6rem;
     }
 
     .side-panel a {
