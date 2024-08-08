@@ -23,32 +23,42 @@ document.addEventListener('DOMContentLoaded', function() {
         loginToggle.classList.remove('active');
     });
 
-    loginForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const email = loginForm.querySelector('input[type="email"]').value;
-        const password = loginForm.querySelector('input[type="password"]').value;
-        // Here you would typically validate the login credentials
-        // For this example, we'll just set the user as logged in
-        setLoggedIn(email, email.split('@')[0]);
-    });
-
     signupForm.addEventListener('submit', (e) => {
         e.preventDefault();
         const name = signupForm.querySelector('input[type="text"]').value;
         const email = signupForm.querySelector('input[type="email"]').value;
         const password = signupForm.querySelector('input[type="password"]').value;
         const confirmPassword = signupForm.querySelectorAll('input[type="password"]')[1].value;
-
+    
         if (password !== confirmPassword) {
             alert("Passwords don't match!");
             return;
         }
-
+    
+        if (!isValidPassword(password)) {
+            alert("Password must be at least 8 characters long and contain at least one special character.");
+            return;
+        }
+    
         // Here you would typically send the signup data to a server
         // For this example, we'll just set the user as logged in
         setLoggedIn(email, name);
     });
-
+    
+    function isValidPassword(password) {
+        // Check if password is at least 8 characters long
+        if (password.length < 8) {
+            return false;
+        }
+    
+        // Check if password contains at least one special character
+        const specialCharRegex = /[!@#$%^&*(),.?":{}|<>]/;
+        if (!specialCharRegex.test(password)) {
+            return false;
+        }
+    
+        return true;
+    }
     logoutBtn.addEventListener('click', () => {
         localStorage.removeItem('user');
         showLoginForm();
@@ -78,3 +88,4 @@ document.addEventListener('DOMContentLoaded', function() {
         showUserInfo(user);
     }
 });
+
