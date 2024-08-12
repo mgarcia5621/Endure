@@ -1,0 +1,22 @@
+{
+  "name": "teoapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "getstarted.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgarcia5621/Endure.git"
+  },
+  "author": "mateo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgarcia5621/Endure/issues"
+  },
+  "homepage": "https://github.com/mgarcia5621/Endure#readme",
+  "dependencies": {
+    "axios": "^1.7.3"
+  }
+}

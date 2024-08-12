@@ -1,4 +1,11 @@
 // Existing JavaScript ...
+// const axios = require('axios');
+
+// axios.get('./exercisedata/exercises.json') {
+//     then.response(
+//         console.log(response)
+//     )
+// }
 
 function openNav() {
     document.getElementById("side-panel").style.width = "250px";
