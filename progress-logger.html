@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Progress Logger</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="#">Fitness Logger</a>
+        </div>
+        <ul class="navbar-menu">
+            <li class="navbar-item"><a href="#">Home</a></li>
+            <li class="navbar-item"><a href="#">Programs</a></li>
+            <li class="navbar-item"><a href="#">About</a></li>
+            <li class="navbar-item"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="programs-page">
+        <h1>Log Your Progress</h1>
+        <div class="question-box">
+            <label for="day-select">Select Day:</label>
+            <select id="day-select">
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+            </select>
+
+            <label for="week-select">Select Week:</label>
+            <select id="week-select">
+                <option value="1">Week 1</option>
+                <option value="2">Week 2</option>
+                <option value="3">Week 3</option>
+                <option value="4">Week 4</option>
+                <option value="5">Week 5</option>
+                <option value="6">Week 6</option>
+                <option value="7">Week 7</option>
+            </select>
+
+            <div id="exercise-list">
+                <h3>Exercises</h3>
+                <!-- Exercise items will be added here -->
+            </div>
+            <button id="add-exercise-btn">Add Exercise</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Fitness Logger
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
